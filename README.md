@@ -34,7 +34,7 @@ pip install clearml clearml-agent datasets pandas scikit-learn matplotlib fastap
 
 ### Запуск ClearML Server
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 ### Настройка ClearML SDK
 
@@ -44,7 +44,7 @@ pip install clearml clearml-agent datasets pandas scikit-learn matplotlib fastap
 clearml-init
 ```
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ### Запуск ClearML Agent
 
@@ -57,7 +57,7 @@ clearml-init
 ```
 
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ## Этап 1. Dataset в ClearML
 
@@ -83,7 +83,7 @@ python upload_dataset.py
 ds = Dataset.get(dataset_id="c5d80e5044f4473f805f5c910ffc498c")
 ```
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 ## Этап 2. Обучение через ClearML Agent
 
@@ -132,14 +132,14 @@ task.execute_remotely(queue_name="students")
 }
 ```
 
-![alt text](image-15.png)
+![alt text](images/image-15.png)
 
 | Experiment 1 | Experiment 2 | 
 |----------|----------|
-|![alt text](image-7.png)  | ![alt text](image-11.png)|
-| ![alt text](image-8.png)  | ![alt text](image-12.png)  |
-| ![alt text](image-9.png)  |![alt text](image-13.png)  |
-| ![alt text](image-10.png) | ![alt text](image-14.png)|
+|![alt text](images/image-7.png)  | ![alt text](images/image-11.png)|
+| ![alt text](images/image-8.png)  | ![alt text](images/image-12.png)  |
+| ![alt text](images/image-9.png)  |![alt text](images/image-13.png)  |
+| ![alt text](images/image-10.png) | ![alt text](images/image-14.png)|
 
 
 ## Этап 3. Model Registry
@@ -168,7 +168,7 @@ python publish_model.py
 
 Полученный `Model ID` используется в inference endpoint
 
-![alt text](image-16.png)
+![alt text](images/image-16.png)
 
 ## Этап 4. Inference Endpoint
 
@@ -258,8 +258,8 @@ UI будет доступен по адресу:
 http://localhost:8501
 ```
 
-![alt text](image-17.png)
+![alt text](images/image-17.png)
 
 | negative | positive | 
 |----------|----------|
-|![alt text](image-18.png)| ![alt text](image-19.png)|
+|![alt text](images/image-18.png)| ![alt text](images/image-19.png)|
